@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <style>
+        body 
+        {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            margin: 0;
+            padding-top: 50px;
+        }
+
+        section 
+        {
+            padding: 70px 10%;
+        }
+
+        p 
+        {
+            margin-bottom: 10px;
+        }
+
+        a:hover 
+        {
+            color: lightpink;
+        }
+
+        .hero 
+        {
+            background-color: #f8f5f1;
+            overflow: hidden;
+        }
+
+        .hero-content 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .hero img {
+            width: 400px;
+            max-width: 100%;
+            margin-top: 40px;
+        }
+
+        .hero-text 
+        {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .button 
+        {
+            display: inline-block;
+            padding: 10px 25px;
+            border: 1px solid #333;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s;
+        }
+
+        .button:hover 
+        {
+            transform: scale(1.05);
+        }
+
+        .enter 
+        {
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .product-container 
+        {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product-box 
+        {
+            flex: 1;
+            min-width: 300px;
+            border: 1px solid black;
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s;
+            border-radius: 10px;
+            opacity: 0.5;
+            height: 140px;
+            text-align: center;
+        }
+
+        .product-box:hover 
+        {
+            transform: translateY(-5px);
+            opacity: 1;
+        }
+
+        .why 
+        {
+            background-color: #f8f5f1;
+            text-align: center;
+        }
+
+        .why-container 
+        {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .why-box {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .cta 
+        {
+            text-align: center;
+        }
+
+        .parallax 
+        {
+            background-image: url("image/scroll.jpg");
+            min-height: 270px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+	<header class="header">
+    <a href="indexx.html" class="logo"><span class="pastry">Pastry</span><span class="lab">Lab.</span></a>
+    
+     <nav class="navbar">
+            <a href="indexx.html" target="_blank">Home</a>
+            <a href="about_us.html" target="_blank">About Us</a>
+            <a href="menu.html" target="_blank">Menu</a>
+            <a href="location.html" target="_blank">Location</a>
+            <a href="reviews.html" target="_blank">Reviews</a>
+     </nav>
+</header>
+
+<section class="hero enter">
+    <div class="hero-content">
+
+        <a href="https://www.facebook.com/PastryLaBabes/">
+            <img src="https://scontent.fkul10-2.fna.fbcdn.net/v/t39.30808-6/357700459_647216320761306_5142533773591279148_n.png?stp=dst-png_s960x960&_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=cE5MSategdQQ7kNvwHoKRhD&_nc_oc=Adl1xoIGFVnHmR5XJOE1jz0tHVm5rtwmQOtaVOSzsKNBlHFvQdJm3C0RLYSEYzi2fO4&_nc_zt=23&_nc_ht=scontent.fkul10-2.fna&_nc_gid=JSACXyQbr3a2aH6PYSZL4Q&oh=00_AfqTGZGNj3KpoApcUn3PvHPt4AURca-_2WvWg_BZSG3oFA&oe=696FB3FF" alt="PastryLab logo" style="border-radius: 0px 35px 35px 0px;">
+        </a>
+
+        <div class="hero-text">
+            <h1>Looking for a tasty dessert worth indulging in?</h1>
+            <p style="font-weight: bold;">
+                At Pastry Lab, we offer a wide selection of pastries, desserts, custom cakes,
+                and dessert table setups thoughtfully crafted for all occasions.
+            </p>
+            <a href="menu.html" class="button">View Menu</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="products enter" style="background-color: black; color: whitesmoke;">
+    <div class="parallax"></div>
+    <div style="text-align:center;">
+        <h2><u>Delights waiting just for you!</u></h2>
+        <p><i>An exquisite range of pastries, desserts, and custom cakes.</i></p>
+    </div>
+</section>
+
+<section class="products enter" style="background-color:#f8f5f1;">
+    <h2 style="text-align:center;">Customer Favourites</h2>
+
+    <div class="product-container">
+        <div class="product-box" style="background-image:url('image/333.jpg');">
+            <h3 style="color: whitesmoke; font-size: 38px; text-shadow: 2px 2px 5px black;">Pavlova</h3>
+        </div>
+        <div class="product-box" style="background-image:url('image/15.jpg');">
+            <h3 style="color: whitesmoke; font-size: 38px; text-shadow: 2px 2px 5px black;">Choux Cream Puffs</h3>
+        </div>
+        <div class="product-box" style="background-image:url('image/strudel2.jpg');">
+            <h3 style="color: whitesmoke; font-size: 38px; text-shadow: 2px 2px 5px black;">Strudel</h3>
+        </div>
+        <div class="product-box" style="background-image:url('image/111.jpg');">
+            <h3 style="color: whitesmoke; font-size: 38px; text-shadow: 2px 2px 5px black;">Italian Cake</h3>
+        </div>
+    </div>
+</section>
+
+<section class="why enter">
+    <h2><img src="image/head.png" style="width:450px"></h2>
+
+    <div class="why-container">
+        <div class="why-box">
+            <h3>The Finest Ingredients</h3>
+            <img src="image/ingredients.png" style="width:150px;">
+            <p>Only selected ingredients are used.</p>
+        </div>
+        <div class="why-box">
+            <h3>Freshly Made</h3>
+            <img src="image/fresh.png" style="width:124px;">
+            <p>Prepared daily in small batches.</p>
+        </div>
+        <div class="why-box">
+            <h3>Customer Satisfaction</h3>
+            <img src="image/cust.webp" style="width:170px;">
+            <p>We prioritize taste and quality.</p>
+        </div>
+    </div>
+</section>
+
+<section class="why enter" style="background-image:url(image/raya5.jpg); background-size: cover;background-position: center; background-repeat: no-repeat; color: whitesmoke; text-shadow: 2px 2px 5px black;">
+    <h2>Celebrate Raya with Our Signature Cookies!</h2>
+    <p>Orders are now open, contact us to reserve yours🍪</p>
+    <a href="https://wa.me/601111433282" class="button" style="color: whitesmoke;text-shadow: 2px 2px 5px black;">Order Now!</a>
+</section>
+
+<footer class="footer" style="background-color:whitesmoke; border-top:1px solid black; padding:20px 50px; font-family:sans-serif; color: black;">
+
+  <div style="display:flex; justify-content:center; gap:50px; flex-wrap:wrap;">
+
+    <div>
+
+      <h4 style="font-size:14px; font-weight:bold; margin-bottom:15px;">STORE LOCATIONS</h4>
+      <p><a href="https://maps.app.goo.gl/EPZ7BZ3z9cz4sFPv9" target="_blank" title="Location">Pastry Lab Kampung Sireh</a></p>
+      <p><a href="https://maps.app.goo.gl/qD6gnC4k1Lf2KTCR7" target="_blank" title="Location">Pastry lab KB</a></p>
+
+    </div>
+
+    <div>
+
+      <h4 style="font-size:14px; font-weight:bold; margin-bottom:15px;">DISCOVER</h4>
+
+      <p><a href="about_us.html" target="_blank" title="About Us">About Us</a></p>
+      <p><a href="reviews.html" target="_blank" title="Reviews">Reviews</a></p>
+      <p><a href="menu.html" target="_blank" title="Menu">Menu</a></p>
+    </div>
+
+    <div>
+      <h4 style="font-size:14px; font-weight:bold; margin-bottom:15px;">CONTACT US</h4>
+
+      <p style="display: flex; align-items: center;"><img src="image/whatsapp_icon.png" style="width: 25px; margin-right: 5px;" alt="whatsapp icon"><a href="https://wa.me/601161144576" target="_blank" title="Start Chat">Order Now</a></p>
+
+      <p style="display: flex; align-items: center;"><img src="image/instagram_icon.png" style="width: 25px; margin-right: 5px;" alt="instagram icon"><a href="https://www.instagram.com/pastrylab.my/?hl=en" target="_blank" title="Visit Profile">Instagram</a></p>
+
+      <p style="display: flex; align-items: center;"><img src="image/tiktok_icon.png" style="width: 25px; margin-right: 5px;" alt="tiktok icon"><a href="https://www.tiktok.com/@pastrylabmy" target="_blank" title="Visit Profile">TikTok</a></p>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid black; margin-top:10px; padding-top:10px; text-align:center; font-size:13px;">
+    Copyright 2026 © By PASTEL RESOURCES (KT0428186-A)<br>
+    Note: This website is developed to fulfill the requirement of IMD318 group assignment.
+  </div>
+
+</footer>
+
+</body>
+</html>
